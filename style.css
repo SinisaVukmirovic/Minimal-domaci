@@ -1,0 +1,412 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+}
+
+nav {
+	padding: 5px 12%;
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	margin: 0 !important;
+}
+
+ul li a {
+	color: black;
+}
+
+nav ul.dropdown-menu {
+	text-transform: none;
+	font-size: 14px;
+}
+
+button.navbar-toggle:hover {
+	background-color: whitesmoke;
+}
+
+span.icon-bar {
+	background-color: black;
+}
+								/*end of navbar style*/
+
+section.cover-img-slider {
+	background-position: 50% 50%;
+	background-image: url("images/slider-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	filter: brightness(60%);
+	width: 100%;
+	height: 650px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+div.headline {
+	text-align: center;
+	position: absolute;
+	bottom: 40%;
+	color: white;
+}
+
+div.headline h1 {
+	font-size: 30px;
+	font-weight: 900;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+div.headline p {
+	font-size: 16px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+								/*end of slider*/
+
+section#about {
+	display: flex;
+	flex-direction: row;
+}
+
+div.about-img {
+	background-image: url("images/about-back-img.jpg");
+	background-size: cover;
+	width: 50%;
+	background-position: bottom center;
+}
+
+div.about-info {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 700px;
+	padding: 100px 12% 100px 7%;
+}
+
+div.about-info h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+div.about-info hr {
+	width: 100%;
+	border: 1px solid lightgrey;
+}
+
+div.about-info p.blue-text {
+	font-size: 22px;
+	text-rendering: auto;
+	color: blue;
+}
+
+div.about-info p {
+	font-size: 16px;
+	margin: 16px 0;
+}
+
+div.about-info img {
+	width: 150px;
+}
+								/*end of abbout style*/
+
+section#our-team {
+	padding: 120px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: whitesmoke;
+	position: relative;
+}
+
+section#our-team h2 {
+	position: absolute;
+	top: 50px;	
+	text-align: center;
+	font-size: 14px;
+	font-weight: 900;
+	color: #242424;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+section#our-team div.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 24%;
+	margin: 0 1.5%;
+	position: relative;
+}
+
+section#our-team div.profile div {
+	align-items: center;
+}
+
+section#our-team div.profile div p.view-bio {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+	top: 200px;
+	visibility: hidden;
+}
+
+section#our-team div.profile:hover div p.view-bio {
+	visibility: visible;
+}
+
+
+section#our-team div.profile a {
+	text-decoration: none;
+}
+
+section#our-team div.profile div {
+	background-color: rgba(13, 68, 148, 0.9);
+}
+													/*remember this option for highlighting on hover*/
+section#our-team div.profile:hover {
+	box-shadow: 0 0 10px lightgrey;
+}
+
+section#our-team div.profile:hover img {
+	opacity: .1;
+	transition: .3s;
+}
+
+section#our-team div.profile img {
+	width: 100%;
+	height: auto;
+}
+
+section#our-team div.profile div.profile-info {
+	background-color: white;
+	padding: 15px 0 20px 0;
+}
+
+section#our-team div.profile div.profile-info h6 {
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	color: blue;
+	text-transform: uppercase;
+	margin: 5px;
+	letter-spacing: 3px;
+}
+
+section#our-team div.profile div.profile-info p {
+	font-size: 10px;
+	color: grey;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-align: center;
+	text-transform: uppercase;
+}
+								/*end of our-team style*/
+
+div.buy-theme {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	background-color: orchid;
+}
+
+div.buy-theme h2 {
+	margin: 20px 0 40px 0;
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+div.buy-theme div a {
+	padding: 10px 20px;
+	background-color: rgb(13, 68, 148);				/*dark blue*/
+	color: white;
+	font-size: 12px;
+	font-weight: 800;
+	text-decoration: none;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+
+section#services {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+div.services-info {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 700px;
+	padding: 100px 7% 100px 12%;
+}
+
+div.services-info h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+div.offer span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: rgb(13, 68, 148);
+	border: 3px solid #F5F7FA;				/*very light blue*/
+	width: 55px;
+	height: 67px;
+}
+
+div.offer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 15px;
+}
+
+div.offer a {
+	text-decoration: none;
+}
+
+div.offer div {
+	padding: 0 0 30px 30px;
+}
+
+div.offer div h4 {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+div.offer div p {
+	font-size: 14px;
+	color: grey;
+	line-height: 24px;
+}
+
+div.services-img {
+	background-image: url("images/services-back-img.jpg");
+	background-size: cover;
+	width: 50%;
+	background-position: bottom center;
+}
+										/*end of services section*/
+
+div.icon-strip {
+	background-image: url("images/icon-strip/pattern.png");
+	background-repeat: repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 40px 15%;
+}
+
+div.icon-strip div.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.icon-strip div.icon img {
+	max-width: 120px;
+	height: auto;
+}
+
+
+
+
+
+
+							/*hamburger button to appear sooner*/
+@media (min-width: 768px) and (max-width: 930px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
+
+
+
+
+
+		/*media queri for smaller screen sizes*/
+									/*1100px*/
+@media screen and (max-width: 1100px) {
+	nav {
+		padding: 5px 4% 5px 8%;
+	}	
+}
+
+
+									/*900px*/
+@media screen and (max-width: 900px) {
+	nav {
+		padding: 5px 2% 5px 6%;
+	}	
+
+	div.about-img {
+		display: none;
+	}
+
+	div.about-info {
+		width: 100%;
+		min-width: 200px;
+		padding: 100px 7%;
+	}
+
+	div.services-info {
+		width: 100%;
+		min-width: 200px;
+		padding: 100px 7%;
+	}
+
+	div.services-img {
+		display: none;
+	}
+}
+
+									/*800px*/
+@media screen and (max-width: 800px) {
+	section#our-team {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	section#our-team div.profile {
+		width: 90%;
+		margin: 3% 0;
+	}
+}
+
+
