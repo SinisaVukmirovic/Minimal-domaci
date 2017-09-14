@@ -149,22 +149,25 @@ section#our-team div.profile {
 }
 
 section#our-team div.profile div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
 section#our-team div.profile div p.view-bio {
-	font-size: 30px;
+	font-size: 16px;
 	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
 	color: white;
 	position: absolute;
-	top: 200px;
 	visibility: hidden;
 }
 
 section#our-team div.profile:hover div p.view-bio {
 	visibility: visible;
 }
-
 
 section#our-team div.profile a {
 	text-decoration: none;
@@ -214,11 +217,12 @@ section#our-team div.profile div.profile-info p {
 								/*end of our-team style*/
 
 div.buy-theme {
+	background-image: url("images/buy-background.jpg");
+	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 50px;
-	background-color: orchid;
 }
 
 div.buy-theme h2 {
@@ -262,6 +266,11 @@ div.services-info h2 {
 	font-size: 40px;
 	font-weight: 900;
 	letter-spacing: 5px;
+}
+
+div.services-info hr {
+	width: 100%;
+	border: 1px solid lightgrey;
 }
 
 div.offer span {
@@ -334,6 +343,209 @@ div.icon-strip div.icon img {
 	height: auto;
 }
 
+div.icon-strip div.icon img:hover {
+	transform: scale(1.08);
+	transition: .5s;
+}
+
+
+section#pricings {
+	display: flex;
+	flex-direction: row;
+}
+
+section#pricings div.pricing-back-img {
+	background-image: url("images/pricings-back-img.jpg");
+	background-position: bottom center;
+	background-size: cover;
+	width: 50%;
+}
+
+section#pricings div.pricings-info {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 700px;
+	padding: 120px 12% 120px 7%;
+}
+
+div.pricings-info h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+div.pricings-info hr {
+	width: 100%;
+	border: 1px solid lightgrey;
+}
+
+div.offer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.offer div.price {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+	align-items: center;
+	padding: 0;
+}
+
+div.offer div.price p {
+	font-size: 70px;
+	color: black;
+}
+
+div.offer div.offer-list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0;
+	margin: 20px;
+}
+
+div.offer div.offer-list h4 {
+	font-size: 14px;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+div.offer div.offer-list p {
+	font-size: 10px;
+	margin: 0;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+div.offer div.offer-btn {
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+	text-align: center;
+	background-color: rgb(13, 68, 148);
+	padding: 0 2px 0 2px;
+	margin: 2% 0 2% 0;
+}
+
+div.offer div.offer-btn a {
+	text-align: center;
+	font-size: 10px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 35px 5px;
+}
+						/*end of pricings style*/
+
+div.record-strip {
+	background-image: url("images/icon-strip/pattern.png");
+	background-repeat: repeat;
+	padding: 40px 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.record-strip div.record-pair {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+div.record-strip div.record-pair div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+}
+
+div.record-strip div.record-pair div span {
+	font-size: 25px;
+	color: rgb(13, 68, 148);
+}
+
+div.record-strip div.record-pair div h6 {
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+
+div.record-strip div.record-pair div p {
+	font-size: 10px;
+}
+								/*end of pricings section*/
+
+section#portfolio {
+	padding: 50px 10%;
+}
+
+section#portfolio h2 {
+	font-size: 42px;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+section#portfolio hr {
+	width: 100%
+	border: 2px solid lightgrey;
+}
+
+section#portfolio div.portfolio-links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 14px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 0 25%;
+}
+
+section#portfolio div.portfolio-links div {
+	margin: 0 10px;
+}
+
+section#portfolio div.portfolio-links div a {
+	color: grey;
+	text-decoration: none;
+}
+
+section#portfolio div.portfolio-links div a:hover {
+	color: black;
+} 
+
+section#portfolio div.previews {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.single-view {
+	width: 33%;
+	height: auto;
+	margin: 1px;
+	overflow: hidden;
+}
+
+div.single-view:hover img {
+	transform: scale(1.2);
+	transition: .3s;
+}
+
+div.single-view img {
+	width: 100%;
+}
 
 
 
@@ -393,6 +605,21 @@ div.icon-strip div.icon img {
 
 	div.services-img {
 		display: none;
+	}
+
+	section#pricings div.pricing-back-img {
+		display: none;
+	}
+
+	section#pricings div.pricings-info {
+		width: 100%;
+		min-width: 200px;
+		padding: 100px 7%;
+	}
+
+	div.record-strip {
+		padding: 40px 5%;
+		flex-direction: column;
 	}
 }
 
